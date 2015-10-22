@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TvTitle"
+        android:text="Manage Process"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvProcessNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="Process: 23"/>
+        <TextView
+            android:id="@+id/tvSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="right"
+            android:text="Free/Total: 150MB/300MB"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvProcessType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Process"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"/>
+
+    <ListView
+        android:id="@+id/lvManageProcess"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSelectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="selectAll"
+            android:text="ALL"/>
+        <Button
+            android:id="@+id/btnSelectNone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="selectNone"
+            android:text="NONE"/>
+        <Button
+            android:id="@+id/btnClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clean"
+            android:text="CLEAN"/>
+
+    </LinearLayout>
+
+</LinearLayout>

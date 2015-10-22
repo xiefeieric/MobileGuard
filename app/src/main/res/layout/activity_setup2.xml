@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fei="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                tools:context="com.fei.mobileguard.activity.ActivitySetup2">
+
+    <TextView
+        style="@style/TvTitle"
+        android:text="2. Bind Your SIM"/>
+
+    <TextView
+        style="@style/TvContent"
+        android:text="To bind your SIM:"/>
+    <TextView
+        style="@style/TvContent"
+        android:gravity="left"
+        android:text="After boot, if SIM card was changed, a warning message will be sent out"/>
+
+    <com.fei.mobileguard.views.ViewSettingItem
+        android:layout_marginTop="5dp"
+        android:id="@+id/viewBindSim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fei:vs_title="Click to Bind SIM"
+        fei:desc_on="SIM bind already"
+        fei:desc_off="SIM not bind"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setup2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/btnPreBind"
+            style="@style/btnPre"/>
+
+        <Button
+            style="@style/btnNext"
+            android:id="@+id/btnNextBind"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

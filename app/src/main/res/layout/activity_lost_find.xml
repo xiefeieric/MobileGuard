@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                >
+
+    <TextView
+        style="@style/TvTitle"
+        android:text="Mobile Safe"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TvContent"
+            android:text="Safe No."/>
+
+        <TextView
+            android:id="@+id/tvSafeNumber"
+            style="@style/TvContent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TvContent"
+            android:text="Lost Protection "/>
+
+        <ImageView
+            android:id="@+id/ivLock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_divider"/>
+
+    <TextView
+        style="@style/TvContent"
+        android:text="Reset Setting"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:background="@drawable/rectangle_selector"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:layout_margin="3dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_divider"/>
+
+    <TextView
+        style="@style/TvContent"
+        android:text="Manual"
+        android:gravity="left"
+        android:background="#4000"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        style="@style/TvContent"
+        android:text="GPS Tracking:#*location*#"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+
+    <TextView
+        style="@style/TvContent"
+        android:text="Play Warn Music:#*alarm*#"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+
+    <TextView
+        style="@style/TvContent"
+        android:text="Remote Delete Data:#*wipedata*#"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+    <TextView
+        style="@style/TvContent"
+        android:text="Remote Screen Lock:#*lockscreen*#"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+
+</LinearLayout>

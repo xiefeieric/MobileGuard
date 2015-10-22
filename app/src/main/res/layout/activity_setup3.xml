@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        style="@style/TvTitle"
+        android:text="3. Set Safe Number"/>
+
+    <TextView
+        style="@style/TvContent"
+        android:text="If SIM changed"/>
+
+    <TextView
+        style="@style/TvContent"
+        android:text="The number you wish to warn"/>
+
+    <EditText
+        android:id="@+id/etNumberWarn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Please enter or select number "/>
+
+    <Button
+        android:id="@+id/btnSelectContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select from contacts"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setup3"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/btnPreNumber"
+            style="@style/btnPre"/>
+
+        <Button
+            style="@style/btnNext"
+            android:id="@+id/btnNextNumber"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

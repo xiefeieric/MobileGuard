@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        style="@style/TvTitle"
+        android:text="1. Welecom to Mobile Safe"/>
+
+    <TextView
+        style="@style/TvContent"
+        android:text="Your Mobile Safe can:"/>
+    <TextView
+        style="@style/TvContent"
+        android:text="SIM Change Warning"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+    <TextView
+        style="@style/TvContent"
+        android:text="GPS Tracking"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+    <TextView
+        style="@style/TvContent"
+        android:text="Remote Delete Data"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+    <TextView
+        style="@style/TvContent"
+        android:text="Remote Screen Lock"
+        android:drawableLeft="@android:drawable/star_big_on"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setup1"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            style="@style/btnNext"
+            android:id="@+id/btnNext"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

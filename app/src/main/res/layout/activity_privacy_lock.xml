@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TvTitle"
+        android:text="Apps Lock"/>
+
+    <RadioGroup
+        android:id="@+id/rrLock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rbUnclock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UNLOCKED"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:checked="true"
+            android:background="@drawable/tab_left_pressed"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/rbLock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:checked="false"
+            android:background="@drawable/tab_right_default"
+            android:textColor="#888"
+            android:text="LOCKED"
+            android:button="@null"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+    </FrameLayout>
+
+</LinearLayout>

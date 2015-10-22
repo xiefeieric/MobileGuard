@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TvTitle"
+        android:text="Manage Apps"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvRam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:text="Free RAM: 180MB"/>
+        <TextView
+            android:id="@+id/tvSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="right"
+            android:text="Free SD: 300MB"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvAppType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Apps"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"/>
+
+    <ListView
+        android:id="@+id/lvManageApps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

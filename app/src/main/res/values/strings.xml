@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MobileGuard</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_home">ActivityHome</string>
+    <string name="title_activity_activity_setting">ActivitySetting</string>
+    <string name="title_activity_activity_lost_find">ActivityLostFind</string>
+    <string name="title_activity_activity_setup1">ActivitySetup1</string>
+    <string name="title_activity_activity_setup2">ActivitySetup2</string>
+    <string name="title_activity_activity_setup3">ActivitySetup3</string>
+    <string name="title_activity_activity_setup4">ActivitySetup4</string>
+    <string name="title_activity_activity_read_contacts">ActivityReadContacts</string>
+    <string name="title_activity_activity_tool_advance">ActivityToolAdvance</string>
+    <string name="title_activity_activity_advance_tool">ActivityAdvanceTool</string>
+    <string name="title_activity_activity_rocket_smoke">ActivityRocketSmoke</string>
+    <string name="title_activity_activity_manage_black_list">ActivityManageBlackList</string>
+    <string name="title_activity_activity_manage_apps">ActivityManageApps</string>
+    <string name="title_activity_activity_manage_process">ActivityManageProcess</string>
+    <string name="title_activity_activity_virus">ActivityVirus</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fei="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.fei.mobileguard.activity.ActivitySetting">
+
+    <TextView
+        style="@style/TvTitle"
+        android:text="Settings"/>
+
+    <com.fei.mobileguard.views.ViewSettingItem
+    android:id="@+id/viewSettingItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    fei:vs_title="Auto Update"
+    fei:desc_on="Auto Update is ON"
+    fei:desc_off="Auto Update is OFF"/>
+
+    <com.fei.mobileguard.views.ViewSettingItem
+        android:id="@+id/viewSettingAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fei:vs_title="Call Address"
+        fei:desc_on="Call Check is ON"
+        fei:desc_off="Call Check is OFF"/>
+
+    <com.fei.mobileguard.views.ViewSettingClick
+        android:id="@+id/viewSettingClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        fei:vs_title="Choose Style"
+        fei:desc_on="Green"
+        />
+
+    <com.fei.mobileguard.views.ViewSettingItem
+        android:id="@+id/viewSettingRocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fei:vs_title="Show Rocket"
+        fei:desc_on="Rocket is ON"
+        fei:desc_off="Rocket is OFF"/>
+
+    <com.fei.mobileguard.views.ViewSettingItem
+        android:id="@+id/viewSettingBlackList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fei:vs_title="Black List Service"
+        fei:desc_on="Service is ON"
+        fei:desc_off="Service is OFF"/>
+
+    <com.fei.mobileguard.views.ViewSettingItem
+        android:id="@+id/viewSettingDog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fei:vs_title="Privacy Service"
+        fei:desc_on="Service is ON"
+        fei:desc_off="Service is OFF"/>
+
+</LinearLayout>
